@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is Forms Tutorials</h2>
+
+    <form action="backned.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role : <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div><br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            SearchBox: <input type="search" name="Search Box">
+        </div><br>
+        <div>
+            Are you eligible: <input type="checkbox" name="myEligibility">
+        </div> <br>
+
+        <div>
+            Gender: Male<input type="radio" name="myGender">Female<input type="radio" name="myGender">
+            Other<input type="radio" name="myGender">
+        </div><br>
+        <div>
+            <label for="car">Choose a car:</label>
+            <select name="car" id="car">
+                <option value="Indica">Indica</option>
+                <option value="Swift Dzire" selected>Swift Dzire</option>
+                <option value="Brezza">Brezza</option>
+            </select>
+        </div><br>
+    
+        <div>
+            Write about your self <br>:<textarea name="myText" cols="90" rows="10"></textarea>
+        </div><br>
+        <div>
+            <input type="button" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div><br>
+
+    </form>
+</body>
+
+</html>
