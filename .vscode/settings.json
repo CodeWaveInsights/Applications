@@ -1,0 +1,11 @@
+{
+    "workbench.tree.renderIndentGuides": "onHover",
+    "editor.guides.indentation": false,
+    "editor.guides.bracketPairs": false,
+    "editor.accessibilityPageSize": 14,
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.preferredDarkColorTheme": "Default Light+"
+}
+
+
+
