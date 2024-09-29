@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashraf Fitness</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        /* CSS Reset */
+        body {
+            font-family: "Rowdies", sans-serif;
+            color: wheat;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/pexels-pixabay-416778.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 90px;
+            top: 27px;
+
+        }
+
+        .left img {
+            /* filter: invert(); */
+            width: 93px;
+            text-align: center;
+
+        }
+
+        .left div {
+            text-align: center;
+            padding: 8px 2px;
+            text-decoration: solid;
+
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 35px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 43px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid blue; */
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .btn {
+            margin: 25px 9px;
+            padding: 8px 14px;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: #1acc42;
+            color: white;
+            cursor: pointer;
+            font-family: "Rowdies", sans-serif;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: rgb(131, 117, 100);
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 106px 50px;
+            padding: 45px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family: "Rowdies", sans-serif;
+            font-size: 25px;
+            border-radius: 24px;
+            text-align: center;
+            display: block;
+            width: 436px;
+            padding: 11px;
+            border: 2px solid black;
+            margin: 13px auto;
+
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #ffdd00;
+        }
+
+        .container button {
+            display: block;
+            width: 94%;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #c61f83;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/image.png" alt="">
+            <div>Ashraf Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Join the Best Gym of Delhi Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
