@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <Style>
+        h1{
+            background-color: bisque;
+            color: red;
+            text-align: center;
+            font-size: bold;
+        }
+        /* div >p{
+            background-color: greenyellow;
+            color: yellow;
+            font-weight: bolder;
+        } */
+
+        div+p{
+           color: rebeccapurple;
+           background-color: red;
+        }
+    </Style>
+</head>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

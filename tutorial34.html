@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px;
+            border: 2px solid rebeccapurple;
+            margin: 23px 12px;
+            background-color: aqua;
+            /* box-shadow: 10px 12px red; */
+             /* box-shadow: -2px -4px blue; */
+             /* box-shadow: 2px 3px 4px; */
+             /* box-shadow: -2px -3px 4px; */
+             /* box-shadow: 2px 3px 4px 5px; */
+             box-shadow: inset 2px 3px red;
+             box-shadow: 2px 3px gold 4px 6px red;
+        }
+        .card h2{
+            text-shadow: 2px 1px blanchedalmond;
+            text-shadow: 2px 3px 2px blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>This is HTML Cource</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vero obcaecati tenetur adipisci tempora
+                cum, laboriosam ab aliquam impedit a reiciendis enim quo, minus eum deserunt! In aperiam ratione,
+                dignissimos doloremque porro obcaecati nihil.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is CSS cource</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vero obcaecati tenetur adipisci tempora
+                cum, laboriosam ab aliquam impedit a reiciendis enim quo, minus eum deserunt! In aperiam ratione,
+                dignissimos doloremque porro obcaecati nihil.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>This is JAVA Souce</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vero obcaecati tenetur adipisci tempora
+                cum, laboriosam ab aliquam impedit a reiciendis enim quo, minus eum deserunt! In aperiam ratione,
+                dignissimos doloremque porro obcaecati nihil.</p>
+        </div>
+        <div class="card" id="card-4">
+            <h2>Card4</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione vero obcaecati tenetur adipisci tempora
+                cum, laboriosam ab aliquam impedit a reiciendis enim quo, minus eum deserunt! In aperiam ratione,
+                dignissimos doloremque porro obcaecati nihil.</p>
+        </div>
+    </div>
+</body>
+
+</html>
