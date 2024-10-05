@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations </title>
+
+    <style>
+        .container{
+            background-color: greenyellow;
+        }
+.box{
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* animation-name: harry; */
+    animation-name: harry1;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    /* animation-fill-mode: alternate; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-delay: 3s; */
+    /* animation-duration: reverse; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: harry  5s ease 2s infinite alternate;
+
+}
+@keyframes harry{
+    from{
+        width: 200px;
+
+    }
+    to{
+        width: 1400px;
+
+    }
+}
+@keyframes harry1{
+    0%{
+        top:0px;
+        left:0px;
+
+    }
+    25%{
+        top:250px;
+        left: 0px;
+
+    }
+    75%{
+        top:250px;
+        left: 250px;
+
+    }
+    100%{
+        top:250px;
+        left: 0px;
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box</div>
+    </div>
+</body>
+</html>
