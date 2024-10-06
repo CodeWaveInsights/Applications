@@ -1,0 +1,245 @@
+/* Css Reset */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html{
+   scroll-behavior: smooth;
+}
+/* CSS Variable */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar: Logo and Image*/
+
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 50px;
+  margin: 5px 8px;
+}
+
+/* Navigation Bar: List Styling*/
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+#navbar ul li {
+  list-style: none; /*Bindu Bindu nahi aayenge*/
+  font-size: 2.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block; /* By default display Inline hoti hai */
+  margin: 23px 24px;
+  padding: 3px 22px;
+  border-radius: 22px;
+  text-decoration: none; /* It will remove the underline*/
+  font-family: "Bebas Neue", sans-serif;
+}
+
+#navbar ul li a:hover {
+  color: white;
+  background-color: blue;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 543px;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home ::before {
+  content: "";
+  position: absolute;
+  background: url("/Project-2/img/food_home.png") no-repeat center center;
+  background-size: cover;
+  height: 610px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 1;
+}
+#home h1 {
+  color: rgb(62, 48, 184);
+  text-align: center;
+}
+#home p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Service Section */
+#client-section {
+   margin: 5px;
+  /* height: 344px; */
+  position: relative; /*It will take as much as required*/
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../Client-logo.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 276px;
+}
+.client-item {
+  padding: 34px;
+  animation: slide 10s infinite linear;
+
+}
+@keyframes slide{
+   0%{
+      transform: translateX(0);
+   }
+   100%{
+      transform: translateX(-100%);
+   }
+}
+#delivery-boy{
+   animation: slide 10s infinite linear;
+}
+@keyframes slide {
+   0% {
+       transform: translateX(-100%); /* Start from outside the left */
+   }
+   100% {
+       transform: translateX(100%);  /* Move to outside the right */
+   }
+}
+/* .service-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ } */
+.h-primary-container {
+  text-align: center;
+  font-size: 40px;
+}
+#services {
+  margin: 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid rgb(42, 44, 165);
+  padding: 34px;
+  margin: 4px 25px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+/* Clients Section */
+
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact ::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../contactUS.png");
+  z-index: -1;
+  opacity: 0.5;
+  top: 0%;
+  left: 0%;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 2.1rem;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+footer {
+  background: black;
+  color: white;
+}
+#bottom-footer{
+   height: 40px;
+   margin-top:2px;
+}
+
+/* Utility classes */
+.h-primary {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary {
+  font-size: 2.1rem;
+  padding: 12px;
+}
+.center {
+  text-align: center;
+  /* font-size: 20px;
+  height: 40px; */
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: wheat;
+  margin: 32px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
