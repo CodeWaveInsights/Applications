@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        :root{
+            /* Color Theme Swatches in RGBA */
+            --Fashion-1-rgba: rgba(140, 2, 14, 1);
+            --Fashion-2-rgba: rgba(191, 3, 38, 1); 
+            --Fashion-3-rgba: rgba(242, 26, 66, 1); 
+            --Fashion-4-rgba: rgba(242, 212, 65, 1); 
+            --Fashion-5-rgba: rgba(216, 149, 23, 1); 
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: var(--Fashion-3-rgba);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #formControl {
+            border: 2px solid var(--Fashion-5-rgba);
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .heading {
+            font-size: 24px;
+            color: var(--Fashion-1-rgba);
+            margin-bottom: 10px;
+        }
+
+        #p-text {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: var(--Fashion-2-rgba);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        #verification {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        #botcss {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .botbutton {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--Fashion-4-rgba);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .botbutton:hover {
+            background-color: var(--Fashion-2-rgba);
+        }
+
+        #submit-form {
+            font-size: 18px;
+            padding: 10px 20px;
+            background-color: var(--Fashion-1-rgba);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #submit-form:hover {
+            background-color: var(--Fashion-2-rgba);
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" id="formControl">
+        <h2 class="heading">Contact Form</h2>
+        <p id="p-text">Please fill your information and we will be sending your order in no time.</p>
+        
+        <label for="name">Your Name</label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Your email">
+        
+        <label for="phone">Phone*</label>
+        <div id="phone-fields">
+            <input type="text" placeholder="###" style="width: 30%;">
+            <input type="text" placeholder="###" style="width: 30%;">
+            <input type="text" placeholder="###" style="width: 30%;">
+        </div>
+        
+        <label for="Message">Message Subject*</label>
+        <select name="Other" id="Other">
+            <option value="Other">Other</option>
+            <option value="family">Family</option>
+            <option value="Friends">Friends</option>
+        </select>
+
+        <label for="message">Message*</label>
+        <textarea name="Message" placeholder="Your message here"></textarea>
+
+        <label for="verifications" id="verification">
+            <div id="botcss">
+                <input type="checkbox" name="checkbox" id="checkbox"> I am not a Bot
+            </div>
+            <button type="button" class="botbutton">Verify</button>
+        </label>
+        
+        <hr>
+        <button type="submit" id="submit-form">SUBMIT FORM</button>
+    </form>
+</body>
+</html>

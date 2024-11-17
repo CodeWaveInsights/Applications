@@ -1,0 +1,57 @@
+.text{
+    margin: 0;
+    padding: 0;
+}
+.text__head{
+    /* background-color: brown; */
+    margin-bottom: 25px;
+    text-align: center;
+    color: blueviolet;
+    font-size: 30px;
+
+}
+.text__primary{
+    background-color: black;
+    padding: 34px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    border: 2px solid rgb(0, 4, 255);
+    height: 50px;
+    border-radius: 25px;
+}
+.text__secondary{
+    background-color: burlywood;
+    background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg");
+    color: black;
+    margin-top: 25px;
+    padding: 34px;
+    padding-left: 0;
+    font-size: 30px;
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+.text__notes{
+    background-color: aqua;
+    color: black;
+    margin-top: 25px;
+    padding: 34px;
+    padding-left: 0;
+    font-size: 25px;
+    border: 2px solid gold;
+    border-radius: 24px;
+    height: 100px;
+    width: auto;
+}
+.text__conclusion{
+    background-color: chocolate;
+    margin-top: 25px;
+    padding: 34px;
+    padding-left: 0;
+    font-size: 25px;
+    color: white;
+    border: 2px solid red;
+    height: 100px;
+   border-radius: 24px;
+}

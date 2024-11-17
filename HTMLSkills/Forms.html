@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            margin: auto;
+            padding:20px;
+            background-color: beige;
+            max-width: 450px;
+            text-align: center;
+            border-radius: 10px;
+        }
+      .button input{
+        background-color: goldenrod;
+        width: 100px;
+        text-decoration: black;
+      }
+      .button input:hover{
+        background-color: aqua;
+        cursor: default;
+      }
+      input, select, textarea{
+
+        margin-bottom: 15px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      label{
+        margin-bottom: 10px;
+      }
+      h2, h3{
+        color: red;
+      }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>Personal Details</h2>
+            <label for="Name">Name:<input type="text"></label><br>
+            <label for="Name">Password:<input type="password"></label><br>
+            <label for="Email-id">E-mail id: <input type="email" name="useremail" id="useremail"></label><br>
+            <label for="gender">Gender: 
+                <input type="radio" name="" id=""><label>Male</label>
+                <input type="radio" name="" id=""><label>Female</label>
+            </label><br>
+            <label for="contact">Contact#: <input type="text"></label>
+            <h3>Educational Qualification</h3>
+           
+            <label for="Engineering">Engineering: <select name="EngDegree" id="EngDegree">
+                <option value="CSS">B.Sc</option>
+                <option value="Mechanical">B.Tech</option>
+                <option value="Electrical">M.Tech</option>
+                <option value="Electronics">B.A</option>
+               </select></label><br>
+               <label for="Hoboes">Hobbies: 
+                <input type="checkbox" name="" id=""><label for="">Paying Chess</label>
+                <input type="checkbox" name="" id=""><label for="">Reading Books</label>
+               </label>
+               <h3>Address</h3>
+               <textarea name="Address" id="Address"></textarea><br>
+               <label for="">Attach Resume: 
+                <input type="file" name="attachment" id="attachment">
+               </label><br>
+               <div class="button">
+                <input type="button" value="SUBMIT">
+            </div>
+               
+
+        </form>
+    </div>
+</body>
+</html>

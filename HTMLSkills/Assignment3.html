@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5 Features</title>
+    </head>
+    <body>
+    
+    <header>
+        <h2>Key Features of HTML5</h2>
+    </header>
+    
+    <section>
+        <h2>Explore the Highlights of HTML5</h2>
+        <p>HTML5 brings new, powerful features that make websites more interactive, accessible, and media-rich. Here are three of the most impactful features:</p>
+    
+        <!-- Feature 1: Audio and Video Support -->
+        <article>
+            <h3>1. Native Audio and Video Support</h3>
+            <p>HTML5 allows developers to easily embed audio and video content directly within webpages, without relying on external plugins. This makes multimedia integration simpler and more efficient.</p>
+            
+            <!-- Video example -->
+            <video controls width="20%">
+                <source src="example.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    
+        <!-- Feature 2: Canvas Element -->
+        <article>
+            <h3>2. The Canvas Element</h3>
+            <p>The <code>&lt;canvas&gt;</code> element allows for dynamic, scriptable rendering of 2D shapes and bitmap images, making it ideal for creating games, animations, and visualizations.</p>
+            
+            <!-- Canvas example -->
+            <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
+            
+            <script>
+                var canvas = document.getElementById('myCanvas');
+                var context = canvas.getContext('2d');
+                context.fillStyle = 'blue';
+                context.fillRect(10, 10, 100, 100);
+                context.fillStyle = 'red';
+                context.arc(200, 75, 50, 0, 2 * Math.PI);
+                context.fill();
+            </script>
+        </article>
+    
+        <!-- Feature 3: Local Storage -->
+        <article>
+            <h3>3. Local Storage</h3>
+            <p>HTML5 introduced Web Storage, which includes <code>localStorage</code> and <code>sessionStorage</code>. These APIs allow data to be stored directly on the user's device, providing a more reliable and flexible way to save data compared to cookies.</p>
+            <p><strong>Try it:</strong></p>
+        </article>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 HTML5 Features Showcase</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextDecoration</title>
+    <style>
+
+        :root{
+            --teat : rgb(141, 9, 243);
+            --cobalt: #033649;
+            --turquise:#066464;
+            --beige: #CEB280;
+            --gold: #000000;
+            
+        }
+        /* h1{
+            text-decoration: underline red wavy 2px;
+            text-decoration: line-color type thinkness
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            word-spacing: 10px;
+            line-height: 20px;
+            text-align: center;
+        } */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--teat);
+    color: wheat;
+}
+#myname{
+    display: block;
+    font-size: 30px;
+    color: var(--gold);
+}
+.list-style{
+    text-decoration: solid;
+    list-style: square;
+}
+#experience-list{
+   /* margin: 0;
+    padding: 0;
+     border: 5px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px; */
+
+    border: 10px solid var(--gold);
+    padding: 20px;
+    margin: 30px;
+    width: 300px;
+    box-sizing: border-box;
+}
+.section-turquoise{
+    background-color: var(--beige);
+}
+.gradient-section{
+    height: 20px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,86,149,1) 43%, rgba(255,0,129,1) 89%);
+    margin-bottom: 5px;
+}
+.experience-header{
+    font-size: 3rem;
+    padding: 1rem;
+    width: 40%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <section id="intro">
+        <p>Hello world !!</p>
+    <p class="name">I am <span id="myname">Ashraf Ali</span></p>
+
+    <div class="profile">
+        <span>Lead Software Engineer</span>
+        <span>Learner | </span>
+        <span>Tech Learner</span>
+    </div>
+
+    <h2>I love to build and break the stuff along
+        with educating people about tech.
+    </h2>
+    
+    <p>I am a Lead Softtware Engineer at UKG and ex-Cyient employee at Automation Test Engineer.</p>
+    </section>
+
+    <div class="gradient-section"></div>
+
+    <div class="section-turquoise">
+        <h2 class="experience-header">
+                  Experience
+        </h2></div>
+
+    <section>
+        <div id="experience">
+            
+            <ul id="experience-list">
+                <li class="list-style">Lead Software Engineer @ <a href="https://www.ukg.com/" target="_blank">UKG</a></li>
+                <li class="list-style">Software Engineer @ <a href="https://www.cyient.com/" target="_blank"></a>Cyient Ltd</li>
+                <li class="list-style">Lead Engineer <a href="https://www.hcltech.com/" target="_blank">@HCL Technologies Ltd</a></li>
+                <li class="list-style">Quality Engineer <a href="https://collabera.com/">@Collabera Technologies</a></li>
+            </ul>
+            </div>
+
+    </section>
+
+   
+
+    
+
+</body>
+</html>
